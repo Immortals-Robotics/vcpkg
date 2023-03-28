@@ -7,7 +7,7 @@ index 658f994..a04cf27 100644
  
  #---- Include boost to add coroutines ----
 -find_package(Boost COMPONENTS coroutine QUIET)
-+find_package(Boost REQUIRED) # coroutine2 is header-only
++find_package(Boost COMPONENTS context REQUIRED) # coroutine2 is header-only
  
  if(Boost_FOUND)
      string(REPLACE "." "0" Boost_VERSION_NODOT ${Boost_VERSION})
